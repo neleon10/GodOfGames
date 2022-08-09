@@ -24,9 +24,9 @@ function Videogames() {
 //getAllGenres
 useEffect(() => {
   dispatch(loader(true))
-  if(genres.length <= 0){
+  /* if(genres.length === 0){
     dispatch(getAllGenres());
-  }
+  } */
   if(videogames.length <= 0){
     dispatch(getAllVideogames())   
   }
