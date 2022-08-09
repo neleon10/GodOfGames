@@ -1,0 +1,35 @@
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb3a5;
+    border-top: 2px solid #037ccc;
+    margin-top: 5px;
+    min-height: 100px;
+}
+.socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.gitHub:hover,.whatsApp:hover,.linkedIn:hover{
+    cursor: pointer;
+    background-color: black;
+    width:3em;
+    height:3em;
+    border-radius: 35%;
+    
+    transition: background-color 800ms;
+    
+}
+.gitHub svg,.whatsApp svg,.linkedIn svg{
+    width:3em;
+    height:3em;
+    color: black;
+}
+.gitHub svg:hover,.whatsApp svg:hover,.linkedIn svg:hover{
+    color: rgb(19, 214, 29);
+}

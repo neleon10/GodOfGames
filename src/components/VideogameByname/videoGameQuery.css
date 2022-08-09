@@ -1,0 +1,15 @@
+
+.errorContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.messageError{
+    font-size: 55px;
+    color: rgb(19, 219, 29);
+    font-family:"Keania One";
+}

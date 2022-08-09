@@ -1,0 +1,13 @@
+.orderByGenreContainer{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../assets/platformer.jpg');
+    
+    background-size: contain;
+}
+.cardGenreContainer{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 400px;
+    justify-content: center;
+}

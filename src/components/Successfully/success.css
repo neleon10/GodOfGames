@@ -1,0 +1,43 @@
+.createdContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    background-color: springgreen;
+    align-items: center;
+    justify-content: center;
+}
+.divBody{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    max-height: 600px;
+    margin-bottom: 100px;
+}
+.createdTitle{
+    font-family: 'Keania One';
+    font-size: 40px;
+}
+.redirecting button{
+    font-family: 'Keania One'; 
+    cursor:pointer;
+    border-radius: 15%;
+    font-size: 25px;
+    border: 1px solid black;
+    background-color: #a2f38a;
+}
+.redirecting button:hover{
+    background-color: black;
+    border: 1px solid #a2f38a;
+    color: white;
+    transition: 800ms;
+    
+}
+
+.babyYoda{
+    height: 240px;
+}
+.YodaPhrase{
+    font-size: 23px;
+    font-style: italic;
+    font-family: monospace;
+}

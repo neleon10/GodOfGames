@@ -1,0 +1,25 @@
+.videoGamesContainerMain{
+   background-image: url('https://wallpaper.dog/large/20525127.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardsMainContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    min-height: 500px;
+    align-items: center;
+    border-top: 2px solid #037ccc;
+    border-bottom: 2px solid #037ccc;
+}
+
+
+
+
+@media (max-width: 630px) {
+    .cardsMainContainer {
+      background-image: none;
+      background-color: white;
+    }}

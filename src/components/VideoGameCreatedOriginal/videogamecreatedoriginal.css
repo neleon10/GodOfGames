@@ -1,0 +1,19 @@
+.createdOriginalCont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../assets/racing.jpg');
+    background-size: cover;
+    background-repeat: none;
+    margin:0 auto;
+    min-height: 500px;
+    border-top: 2px solid #037ccc;
+    border-bottom: 2px solid #037ccc;
+}
+.navMainContainer,.footerContainer{
+    margin: 0px;
+}
+
+
+

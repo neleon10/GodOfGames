@@ -1,0 +1,84 @@
+.navMainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #037ccc;
+    margin-bottom: 5px;
+    background-color: #ffb3a5;
+    
+}
+.bgColor{
+    background-color: #588342;
+}
+.titleNav {
+  font-family: "Keania One";
+  text-shadow: 4px 2px 11px #498932;
+  font-weight: 400;
+  font-size: 45px;
+  text-decoration: none;
+  cursor:pointer;
+  
+}
+.titleNav:hover h1{
+    text-shadow: 5px 2px 11px white;
+    transition: 500ms;
+    
+}
+.navConatinerComponents{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    
+}
+/* all components inside NAV */
+.selectsStyle,.searchInputNav {
+    font-family: 'Keania One';
+    border:3px solid black;
+    border-radius: 25px;
+    padding:5px;
+    box-shadow: 4px 1px 7px 0px rgb(116 105 105);
+    margin-bottom: 15px; 
+    
+    
+}
+
+/*General styles for selects*/
+.selectsStyle div label span{
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.selectsStyle div select{
+    margin-right: 15px;
+    margin-left: 15px;
+    background-color: unset;
+    border:1px solid black;
+    font-family: 'Keania One';
+}
+
+
+/* Search component */
+
+.searchInputNav input[type=text]{
+    border: none;
+    margin-right: 15px;
+    background-color: unset;
+}
+.searchInputNav input[type=text]:focus { 
+    border: 0;
+    outline:none;
+}
+.inputButton{
+    font-family: 'Keania One';
+    padding: 0px 15px;
+    border-radius: 25px;
+    
+}
+.inputButton:hover{
+    cursor:pointer;
+    color:white;
+    background-color: black;
+    transition: 800ms;
+}
+
+
+

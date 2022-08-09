@@ -1,0 +1,110 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    background-image: url('../../assets/Ryu.jpg');
+    box-shadow: 5px -2px 20px 10px #bb3838;
+    margin: 20px;
+    border: 3px solid rgb(155, 41, 41);
+    min-height: 600px;
+
+}
+
+
+.labelsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    width:90%;
+}
+.labelsContainer label{
+    font-family: "Keania One";
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+.labelsContainer input{
+    border: 1px solid black;
+    width: 50%;
+}
+.labelsContainer textarea{
+    overflow-y: scroll;
+    height: 100px;
+    width:50%;
+    resize: none; 
+}
+.platfromCont{
+    display: flex;
+    border:2px solid rgb(20, 91, 197);
+    margin-top: 60px;
+    background-color: rgb(20 91 197 / 82%);
+}
+.checkBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 25px;
+    
+}
+.checkBox input:hover{
+    cursor: pointer;
+}
+
+
+.genreContainer{
+    display: flex;
+    flex-wrap: wrap;
+    border:2px solid red;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #ff6347bf;
+}
+.genreContainer label, .platfromCont label{
+    font-family: "Keania One";
+    font-size: 20px;
+}
+.checkBoxGenres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 0px 10px;
+}
+.checkBoxGenres input:hover {
+    cursor: pointer;
+}
+
+
+.buttonForm{
+    margin:25px 0px;
+    
+}
+.buttonForm button {
+    font-family: "Keania One";
+    width: 302px;
+    font-size: 19px;
+    background-color: yellowgreen
+}
+.buttonForm button:hover{
+    background-color: red;
+    color:white;
+    transition: 500ms;
+    cursor:pointer;
+}
+.backStreetBoys{
+    margin:0px 0px 25px 0px;
+    
+}
+.backStreetBoys button{
+    font-family: "Keania One";
+    width: 250px;
+    font-size: 15px;
+    background-color: rgb(255, 0, 76)
+    
+}
+.backStreetBoys button:hover{
+    color:white;
+    transition: 500ms;
+    cursor:pointer;
+}
