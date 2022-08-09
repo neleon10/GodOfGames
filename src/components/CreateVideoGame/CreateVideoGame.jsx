@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { createVideoGame, getAllGenres } from "../../actions/actions";
+import { createVideoGame} from "../../actions/actions";
 import {Link} from 'react-router-dom';
 import "./createGame.css";
 
@@ -10,10 +10,7 @@ function CreateVideoGame() {
   const genres = useSelector((state) => state.genres);
   const dispatch = useDispatch();
   const navigate = useNavigate()
-  /* useEffect(() => {
-    dispatch(getAllGenres())
-    
-  }, []) */
+
   
   
   

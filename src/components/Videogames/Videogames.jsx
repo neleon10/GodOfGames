@@ -24,10 +24,12 @@ function Videogames() {
 //getAllGenres
 useEffect(() => {
   dispatch(loader(true))
-  if(genres.length !== []){
+  if(genres.length <= 0){
     dispatch(getAllGenres());
   }
-  dispatch(getAllVideogames())   
+  if(videogames.length <= 0){
+    dispatch(getAllVideogames())   
+  }
 
 }, []);
 
