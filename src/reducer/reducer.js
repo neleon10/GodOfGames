@@ -107,7 +107,7 @@ const initialState = {
           
 //******************************************** */
           case GET_ALL_GENRES:
-            if(genres.length === 0){
+            if(state.genres.length === 0){
               return {
                 ...state,
                 genres: action.payload
