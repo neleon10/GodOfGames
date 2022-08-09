@@ -21,11 +21,10 @@ function Videogames() {
   
 
   
-//getAllGenres
+
 useEffect(() => {
-  dispatch(loader(true))
-  
   if(videogames.length <= 0){
+    dispatch(loader(true))
     dispatch(getAllVideogames())   
   }
 
