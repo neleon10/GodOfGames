@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { createVideoGame} from "../../actions/actions";
 import {Link} from 'react-router-dom';
+import {getAllGenres} from '../../actions/actions'
 import "./createGame.css";
 
 function CreateVideoGame() {
