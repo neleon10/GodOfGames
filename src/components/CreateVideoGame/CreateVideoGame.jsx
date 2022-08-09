@@ -13,7 +13,9 @@ function CreateVideoGame() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    dispatch(getAllGenres());
+    if(genres.length === 0){
+      dispatch(getAllGenres());
+    }
   }, [])
   
   
