@@ -23,7 +23,7 @@ function Videogames() {
   
 
 useEffect(() => {
-  if(videogames.length <= 0 || videoGameCreated.id > 10){
+  if(videogames.length <= 0 || videoGameCreated.id.length > 10){
     dispatch(loader(true))
     dispatch(getAllVideogames())   
   }
