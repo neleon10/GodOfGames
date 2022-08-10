@@ -22,7 +22,7 @@ function Videogames() {
   
 
 useEffect(() => {
-  if(videogames.length <= 0 || videogames.includes(id.length > 10)){
+  if(videogames.length <= 0 || videogames.forEach((el)=> {el.id > 10})){
     dispatch(loader(true))
     dispatch(getAllVideogames())   
   }
