@@ -23,7 +23,7 @@ function Videogames() {
   
 
 useEffect(() => {
-  if(videoGameCreated){
+  if(videoGameCreated.id === true){
       dispatch(loader(true))
       dispatch(getAllVideogames())
   }
