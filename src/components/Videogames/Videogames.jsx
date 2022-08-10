@@ -17,18 +17,16 @@ function Videogames() {
   const loaderVideogames = useSelector((state)=> state.loadingVideogames)//loader
   const [currentPage, setCurrentPage] = useState(1);
   const [videoGamePerPage] = useState(15);
-  
-  
+  const [newGame,setNewGame] = useState({})// if this changes get all games. 
 
   
-
 
 useEffect(() => {
-  
+  setNewGame(gameCreated)
   dispatch(loader(true))
   dispatch(getAllVideogames())
   
-}, [gameCreated]);
+}, [newGame]);
 
 
  
