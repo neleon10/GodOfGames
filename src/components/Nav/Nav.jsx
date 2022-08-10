@@ -6,13 +6,12 @@ import Rating from './rating/Rating'
 import OrderCreated from "./OrderCreated/OrderCreated";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import {getAllVideogames} from "../../actions/actions"
 import { Link } from "react-router-dom";
 import "../Nav/nav.css";
 
 
 
-function Nav({green}) {
+function Nav() {
   const dispatch = useDispatch();
 //let's navigate to other side!
 let navigate = useNavigate(); //hook navigate
@@ -26,7 +25,7 @@ let navigate = useNavigate(); //hook navigate
   return (
     <>
       <div className="navMainContainer">
-        <Link to= '/videogames' style={{textDecoration:none,color: unset}}>
+        <Link to= '/videogames' className="linkTitle">
           <div className="titleNav">
               <h1 /* onClick={()=>goToMainePage()} */>God of Games</h1>
           </div>

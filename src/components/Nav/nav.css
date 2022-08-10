@@ -79,6 +79,9 @@
     background-color: black;
     transition: 800ms;
 }
-
+.linkTitle{
+    color: unset;
+    text-decoration: none;
+}
 
 
