@@ -17,14 +17,13 @@ function Videogames() {
   const [currentPage, setCurrentPage] = useState(1);
   const [videoGamePerPage] = useState(15);
   
-let created = videogames.length;
-
+  
 
 useEffect(() => {
   dispatch(loader(true))
   dispatch(getAllVideogames())
   
-}, [created]);
+}, []);
 
 
  
