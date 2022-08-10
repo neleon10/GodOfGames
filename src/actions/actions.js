@@ -172,8 +172,10 @@ export function createVideoGame(videoGame){
               type:POST_A_VIDEO_GAME,
               payload: game
             })}
+            dispatch(getAllVideogames())
           })  
     }
+
     
   }catch(e){
     console.log('Post error',e)

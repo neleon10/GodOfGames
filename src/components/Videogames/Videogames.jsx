@@ -20,8 +20,10 @@ function Videogames() {
   
 
 useEffect(() => {
-  dispatch(loader(true))
-  dispatch(getAllVideogames())
+  if(videogames.length <= 0){
+    dispatch(loader(true))
+    dispatch(getAllVideogames())
+  }
   
 }, []);
 
