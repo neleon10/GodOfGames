@@ -13,6 +13,7 @@ import { Rings } from  'react-loader-spinner';
 function Videogames() {
   const dispatch = useDispatch();
   const videogames = useSelector((state) => state.videoGames);
+  const gameCreated = useSelector((state)=> state.videoGameCreated);
   const loaderVideogames = useSelector((state)=> state.loadingVideogames)//loader
   const [currentPage, setCurrentPage] = useState(1);
   const [videoGamePerPage] = useState(15);
@@ -21,10 +22,28 @@ function Videogames() {
 
   
 
+let idNewGame = gameCreated.id
 useEffect(() => {
+  
+  if(videogames.length <= 0){
     dispatch(loader(true))
     dispatch(getAllVideogames())   
+  }else{
+    if(gameCreated === {}){
+      dispatch(loader(true))
+      dispatch(getAllVideogames()) 
+    }else{
+      if(gameCreated.id !== idNewGame){
+        idNewGame = gameCreated.id
+        dispatch(loader(true))
+        dispatch(getAllVideogames())
+
+      }
+    }
+  }
+  
 }, []);
+
 
  
 
