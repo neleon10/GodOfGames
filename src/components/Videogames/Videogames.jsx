@@ -22,27 +22,13 @@ function Videogames() {
 
   
 
-let idNewGame = gameCreated.id
+
 useEffect(() => {
   
-  if(videogames.length <= 0){
-    dispatch(loader(true))
-    dispatch(getAllVideogames())   
-  }else{
-    if(gameCreated === {}){
-      dispatch(loader(true))
-      dispatch(getAllVideogames()) 
-    }else{
-      if(gameCreated.id !== idNewGame){
-        idNewGame = gameCreated.id
-        dispatch(loader(true))
-        dispatch(getAllVideogames())
-
-      }
-    }
-  }
+  dispatch(loader(true))
+  dispatch(getAllVideogames())
   
-}, []);
+}, [gameCreated]);
 
 
  
