@@ -13,20 +13,18 @@ import { Rings } from  'react-loader-spinner';
 function Videogames() {
   const dispatch = useDispatch();
   const videogames = useSelector((state) => state.videoGames);
-  const gameCreated = useSelector((state)=> state.videoGameCreated);
   const loaderVideogames = useSelector((state)=> state.loadingVideogames)//loader
   const [currentPage, setCurrentPage] = useState(1);
   const [videoGamePerPage] = useState(15);
-  const [newGame,setNewGame] = useState({})// if this changes get all games. 
-
   
+let created = videogames.length;
+
 
 useEffect(() => {
-  setNewGame(gameCreated)
   dispatch(loader(true))
   dispatch(getAllVideogames())
   
-}, [newGame]);
+}, [created]);
 
 
  
