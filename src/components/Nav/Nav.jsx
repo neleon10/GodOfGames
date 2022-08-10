@@ -7,6 +7,7 @@ import OrderCreated from "./OrderCreated/OrderCreated";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import {getAllVideogames} from "../../actions/actions"
+import { Link } from "react-router-dom";
 import "../Nav/nav.css";
 
 
@@ -16,18 +17,21 @@ function Nav({green}) {
 //let's navigate to other side!
 let navigate = useNavigate(); //hook navigate
 
-function goToMainePage(){
+/* function goToMainePage(){
   dispatch(getAllVideogames())
   let path = '/videogames'; 
   navigate(path);
-}
+} */
 
   return (
     <>
       <div className="navMainContainer">
-        <div className="titleNav">
-            <h1 onClick={()=>goToMainePage()}>God of Games</h1>
-        </div>
+        <Link to= '/videogames'>
+          <div className="titleNav">
+              <h1 /* onClick={()=>goToMainePage()} */>God of Games</h1>
+          </div>
+        </Link>
+
         <div className="navConatinerComponents">
           <div className="selectsStyle">
             <AtoZ />
