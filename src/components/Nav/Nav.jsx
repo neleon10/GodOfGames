@@ -26,7 +26,7 @@ let navigate = useNavigate(); //hook navigate
   return (
     <>
       <div className="navMainContainer">
-        <Link to= '/videogames'>
+        <Link to= '/videogames' style={{textDecoration:none,color: unset}}>
           <div className="titleNav">
               <h1 /* onClick={()=>goToMainePage()} */>God of Games</h1>
           </div>
