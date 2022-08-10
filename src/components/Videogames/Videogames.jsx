@@ -9,7 +9,6 @@ import Pagination from "../Pagination/Pagination";
 import "../Videogames/videogames.css"; 
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Rings } from  'react-loader-spinner';
-
 function Videogames() {
   const dispatch = useDispatch();
   const videogames = useSelector((state) => state.videoGames);
@@ -17,12 +16,13 @@ function Videogames() {
   const [currentPage, setCurrentPage] = useState(1);
   const [videoGamePerPage] = useState(15);
   
-  
 
-useEffect(() => {
-  if(videogames.length <= 0){
-    dispatch(loader(true))
-    dispatch(getAllVideogames())
+  
+  useEffect(() => {
+    if(videogames.length <= 0){
+      dispatch(loader(true))
+      dispatch(getAllVideogames())
+      dispatch(getAllGenres());
   }
   
 }, []);
