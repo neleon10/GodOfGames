@@ -2,7 +2,7 @@ God of Games
 ------------
 
 * Built website where users can access an overview of various game cards, looking them up by genre, platform,etc. Besides, users can create their own customised cards.
-* Utilised Front: HTML, CSS3, React, Redux. Back: Node Js, Sequelize and PostgreSQL.
+* Utilised ***Front:*** HTML, CSS3, React, Redux. ***Back:*** Node Js, Sequelize and PostgreSQL.
 
 ### Technologies
 
@@ -17,4 +17,5 @@ God of Games
 <a href="https://www.heroku.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/heroku-colored.svg" width="36" height="36" alt="Heroku" /></a>
 </p>
 
-
+### Link 
+[God of Games ](https://godofgames.herokuapp.com)
